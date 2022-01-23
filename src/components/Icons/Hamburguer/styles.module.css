@@ -7,6 +7,7 @@
   margin: 3em;
   z-index: 100;
   cursor: pointer;
+  outline: none;
 }
 
 .lines {
