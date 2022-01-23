@@ -1,0 +1,35 @@
+.hamburguer {
+  --texts-and-icons: #fff;
+  --transition-type: ease-in;
+
+  width: 2em;
+  height: 1em;
+  margin: 3em;
+  z-index: 100;
+  cursor: pointer;
+  outline: none;
+}
+
+.lines {
+  background-color: var(--texts-and-icons);
+  width: 100%;
+  height: 5px;
+  margin: 5px 0;
+  transition: all 450ms var(--transition-type);
+}
+
+.close-hamburguer > .lines {
+  cursor: pointer;
+}
+
+.close-hamburguer > .line-top {
+  transform: translateY(200%) rotate(45deg);
+}
+
+.close-hamburguer > .line-mid {
+  opacity: 0;
+}
+
+.close-hamburguer > .line-bottom {
+  transform: translateY(-200%) rotate(135deg);
+}
