@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'bg-main': '#010F1D'
+        'bg-main': '#010F1D',
+        'btn-border': '#94C8FD',
+        'p-shadow': '#0466C8'
       }
     },
     fontFamily: {
