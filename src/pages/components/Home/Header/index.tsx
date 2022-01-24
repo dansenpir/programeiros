@@ -1,13 +1,13 @@
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
-import { NavLink } from "./NavLink";
-import { SignIn } from "./SignIn"
+import NavLink from './NavLink';
+import SignIn from './SignIn';
 
-export function Header() {
+export default function Header() {
   return (
-    <header className="px-10 py-10">
-      <div className="xl:w-11/12 xl:mx-auto">
-        <div className="flex items-center justify-between">
+    <header className='px-10 py-10'>
+      <div className='xl:w-11/12 xl:mx-auto'>
+        <div className='flex items-center justify-between'>
           <NavLink />
           <SignIn />
         </div>
