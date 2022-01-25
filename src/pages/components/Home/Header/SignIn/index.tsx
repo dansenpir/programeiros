@@ -11,7 +11,7 @@ export default function SignIn() {
   return (
     <>
       {isDesktop ? (
-        <button className='hidden p-3 px-6 text-white border border-btn-border rounded-xl font-grotesk hover:bg-btn-border hover:text-white sm:inline text-btn-border'>
+        <button className='hidden p-3 px-6 border border-btn-border rounded-xl font-grotesk hover:bg-btn-border hover:text-white sm:inline text-btn-border'>
           Entrar
         </button>
       ) : (
