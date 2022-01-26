@@ -1,11 +1,10 @@
 import styles from './styles.module.css';
-
 import NavLink from './NavLink';
 import SignIn from './SignIn';
 
 export default function Header() {
   return (
-    <header className='px-10 py-10'>
+    <header className='p-10'>
       <div className='xl:w-11/12 xl:mx-auto'>
         <div className='flex items-center justify-between'>
           <NavLink />

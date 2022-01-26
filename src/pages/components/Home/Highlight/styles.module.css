@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.title {
+  color: #04c8a7;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.8281rem;
+  width: 70%;
+}
+
+.subtitle {
+  color: #ffffff;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 2.2156rem;
+  padding-top: 1.5rem;
+  width: 75%;
+}
+
+.telegramButton {
+  margin-top: 2.75rem;
+}
