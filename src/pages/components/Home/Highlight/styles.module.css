@@ -1,17 +1,8 @@
 .container {
-  margin-top: 5rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-}
-
-.boxText {
-  width: 45%;
-  margin-right: 5%;
-}
-
-.boxImage {
-  height: 21.25rem;
-  width: 29.2175rem;
+  margin-top: 4rem;
 }
 
 .title {
@@ -21,6 +12,7 @@
   font-size: 3rem;
   font-weight: 700;
   line-height: 3.8281rem;
+  width: 70%;
 }
 
 .subtitle {
@@ -31,4 +23,9 @@
   font-weight: 300;
   line-height: 2.2156rem;
   padding-top: 1.5rem;
+  width: 75%;
+}
+
+.telegramButton {
+  margin-top: 2.75rem;
 }
