@@ -3,7 +3,7 @@ import TelegramButton from '../../../../components/TelegramButton';
 
 export default function Highlight() {
   return (
-    <div className={`${styles.container} px-24`}>
+    <div className={`px-10 xl:px-24 ${styles.container}`}>
       <div>
         <h1 className={styles.title}>
           Programação para todos com café e música.
