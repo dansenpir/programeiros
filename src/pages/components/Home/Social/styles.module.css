@@ -1,7 +1,13 @@
 .social {
   display: flex;
+  align-items: center;
 }
 
 .icon {
-  padding: 0 2.1875rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon:nth-child(2) {
+  margin: 0 2.1875rem;
 }
