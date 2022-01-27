@@ -1,0 +1,39 @@
+.bgBlack {
+  background: #010f1d;
+  padding: 5.5rem 0;
+}
+
+.bgBlue {
+  background: #0466c8;
+  padding: 4.6875rem 0;
+}
+
+.footer {
+  margin-top: 15.625rem;
+  padding-bottom: 2rem;
+}
+
+.footerSocial {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footerCopyright {
+  color: #ffffff;
+  font-family: 'Overpass', 'sans serif';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerInfo {
+  display: flex;
+}
+
+.footerInfoItem {
+  padding: 0 4rem;
+}

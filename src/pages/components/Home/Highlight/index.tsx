@@ -1,5 +1,4 @@
 import styles from './styles.module.css';
-import coding from '../../../../../public/images/coding.svg';
 import TelegramButton from '../../../../components/TelegramButton';
 
 export default function Highlight() {
@@ -18,7 +17,7 @@ export default function Highlight() {
         </div>
       </div>
       <div>
-        <img src={coding} alt='pessoa programando' />
+        <img src='/images/coding.svg' alt='pessoa programando' />
       </div>
     </div>
   );
