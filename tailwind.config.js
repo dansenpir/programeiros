@@ -11,6 +11,8 @@ module.exports = {
         'btn-border': '#94C8FD',
         'p-shadow': '#0466C8',
         'title-green': '#04c8a7',
+        'split-complementary': '#C8A704',
+        'text-main': '#54A8FC',
       },
       fontSize: {
         'text-2.5xl': '1.75rem',
