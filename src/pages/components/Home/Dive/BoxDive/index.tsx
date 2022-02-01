@@ -1,11 +1,12 @@
-export default function BoxDive({ titleColor, title, message }) {
+export default function BoxDive({ titleColor, title, message, setClassName }) {
   return (
-    <div className='bg-p-shadow h-24 w-80 flex flex-col justify-center px-4 rounded-xl'>
+    <div
+      className={`bg-p-shadow h-24 w-full md:w-1/3 flex flex-col justify-center px-4 rounded-xl ${setClassName}`}>
       <h3
-        className={`${titleColor} font-grotestk font-bold text-base leading-5`}>
+        className={`font-grotestk font-bold text-sm xl:text-base leading-5 ${titleColor}`}>
         {title}
       </h3>
-      <p className='text-white font-overpass font-light text-sm mt-4'>
+      <p className='text-white font-overpass font-light text-xs lg:text-sm mt-4'>
         {message}
       </p>
     </div>
