@@ -7,12 +7,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'bg-main': '#010F1D',
-        'btn-border': '#94C8FD',
-        'p-shadow': '#0466C8',
-        'title-green': '#04c8a7',
-        'split-complementary': '#C8A704',
-        'text-main': '#54A8FC',
+        'btn-discord': '#5865F2',
+        'btn-github': '#0969DA',
+        'btn-telegram': '#0F86D7',
+        'blue': '#54A8FC',
+        'dark': '#121315',
+        'green': '#04C8A7',
+        'gray': '#A5A9B2',
+        'gray-white': '#DBDDE0',
+        'gray-dark': '#41454C',
+        'orange': '#C8A704',
+        'red': '#C82504'        
       },
       fontSize: {
         'text-2.5xl': '1.75rem',
