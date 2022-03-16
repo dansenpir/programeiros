@@ -1,7 +1,7 @@
 export default function BoxDive({ titleColor, title, message, setClassName }) {
   return (
     <div
-      className={`bg-p-shadow h-24 w-full md:w-1/3 flex flex-col justify-center px-4 rounded-xl ${setClassName}`}>
+      className={`h-24 w-full md:w-1/3 flex flex-col justify-center px-4 rounded-xl ${setClassName}`}>
       <h3
         className={`font-grotestk font-bold text-sm xl:text-base leading-5 ${titleColor}`}>
         {title}

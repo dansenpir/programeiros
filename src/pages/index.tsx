@@ -5,7 +5,7 @@ import Dive from './components/Home/Dive';
 
 export default function Home() {
   return (
-    <main className='w-full max-w-full min-h-screen bg-bg-main'>
+    <main className='w-full max-w-full min-h-screen bg-white'>
       <Header />
       <Highlight />
       <Dive />
