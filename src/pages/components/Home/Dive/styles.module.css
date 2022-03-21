@@ -1,0 +1,11 @@
+.textRainbow {
+  background: linear-gradient(
+    89.36deg,
+    #04c8a7 0.55%,
+    #0466c8 37.12%,
+    #8c04c7 61.33%,
+    #c80480 99.45%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
