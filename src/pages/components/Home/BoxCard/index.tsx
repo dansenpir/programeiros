@@ -1,7 +1,7 @@
 import styles from './styles.module.css';
 import Card from './Card';
 
-export default function Dive() {
+export default function BoxCard() {
   return (
     <section>
       <h1 className={`${styles.textRainbow} font-grotesk font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl px-10 xl:px-24 xl:leading-24 mt-36 w-4/5 md:w-3/5`}>
