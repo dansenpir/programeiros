@@ -1,4 +1,4 @@
-export default function BoxDive({ titleColor, title, message, setClassName }) {
+export default function Card({ titleColor, title, message, setClassName }) {
   return (
     <div
       className={`h-24 w-full md:w-1/3 flex flex-col justify-center px-4 rounded-xl ${setClassName}`}>

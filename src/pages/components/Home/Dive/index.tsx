@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import BoxDive from './BoxDive';
+import Card from './Card';
 
 export default function Dive() {
   return (
@@ -8,19 +8,19 @@ export default function Dive() {
         Mergulhe no mundo da tecnologia
       </h1>
       <div className='flex flex-col md:flex-row justify-between mt-16 mx-10 md:mx-0'>
-        <BoxDive
+        <Card
           titleColor={'text-orange'}
           title='Guia de estudos'
           message='Aprenda aquela tão sonhada tecnologia.'
           setClassName={'mb-32 md:mb-0 md:ml-10 xl:ml-24 lg:mr-36'}
         />
-        <BoxDive
+        <Card
           titleColor={'text-blue'}
           title={'Comunidade'}
           message={'Um espaço para aprender, ensinar e criar portfólio.'}
           setClassName={'mb-32 md:mb-0 md:mx-5 lg:mx-0'}
         />
-        <BoxDive
+        <Card
           titleColor={'text-green'}
           title={'Recrute ou busque por vagas'}
           message={'Contrate desenvolvedores ou encontre sua vaga.'}
