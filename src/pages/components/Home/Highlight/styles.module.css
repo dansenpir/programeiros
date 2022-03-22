@@ -1,0 +1,20 @@
+.textAnimationBlue {
+  background: linear-gradient(89.36deg, #0466c8 0.55%, #54a8fc 99.45%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.textAnimationPurple {
+  background: linear-gradient(90deg, #8c04c7 0%, #c954fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.textAnimationOrange {
+  background: linear-gradient(90deg, #c86604 0%, #c8a704 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

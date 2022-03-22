@@ -1,12 +1,34 @@
-import {SocialButton} from '../../../../components/SocialButton/index';
+import styles from './styles.module.css';
+import { useEffect, useState } from 'react';
+import { SocialButton } from '../../../../components/SocialButton/index';
 
 export default function Highlight() {
+  const animation = [
+    ['programação', `${styles.textAnimationBlue}`],
+    ['design gráfico', `${styles.textAnimationPurple}`],
+    ['UX/UI design', `${styles.textAnimationOrange}`],
+  ];
+
+  const [category, setCategory] = useState('programação');
+  const [categoryTextColor, setCategoryTextColor] = useState('text-blue');
+  const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (counter <= animation.length - 2) setCounter(counter + 1);
+      else setCounter(0);
+    }, 5000);
+    setCategory(animation[counter][0]);
+    setCategoryTextColor(animation[counter][1]);
+  }, [counter]);
+
   return (
     <section className='flex flex-col sm:flex-row items-center justify-between mt-16 pl-10 xl:pl-24'>
       <div className='flex'>
         <div className='mt-0 md:mt-20 lg:mt-24 xl:mt-32'>
           <h1 className='text-3xl md:text-2xl lg:text-4xl lg:leading-10 xl:text-5xl xl:leading-24 text-dark dark:text-white font-grotesk font-bold w-auto md:w-5/6 xl:w-3/4 pr-16 md:pr-0'>
-            Aprenda programação na prática com outros membros da comunidade.
+            Aprenda <span className={categoryTextColor}>{category}</span> na
+            prática com outros membros da comunidade.
           </h1>
           <h3 className='font-overpass font-light text-green text-md lg:text-xl lg:leading-7 xl:text-2-5xl xl:leading-9 pt-5 md:pt-6 md:w-5/6 lg:w-4/6 xl:w-4/5 pr-16 md:pr-0'>
             Traceje rotas de estudo, encontre vagas, descubra e aprenda mais
@@ -24,7 +46,6 @@ export default function Highlight() {
               image={'/images/telegram_icon.svg'}
               alt={'Ícone do Telegram'}
               setClassName={'mb-8 sm:mb-0'}
-
             />
             <SocialButton
               link={'https://discord.gg/pDxbmrzNaJ'}
