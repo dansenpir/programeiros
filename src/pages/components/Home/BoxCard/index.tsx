@@ -17,19 +17,19 @@ export default function BoxCard() {
       </div>
       <div className='flex flex-col md:flex-row justify-between mt-16 mx-10 md:mx-0'>
         <Card
-          titleColor={'text-orange'}
+          color={'orange'}
           title='Guia de estudos'
           message='Aprenda aquela tão sonhada tecnologia.'
           setClassName={'mb-32 md:mb-0 md:ml-10 xl:ml-24 lg:mr-36'}
         />
         <Card
-          titleColor={'text-blue'}
+          color={'blue'}
           title={'Comunidade'}
           message={'Um espaço para aprender, ensinar e criar portfólio.'}
           setClassName={'mb-32 md:mb-0 md:mx-5 lg:mx-0'}
         />
         <Card
-          titleColor={'text-green'}
+          color={'green'}
           title={'Recrute ou busque por vagas'}
           message={'Contrate desenvolvedores ou encontre sua vaga.'}
           setClassName={'md:mr-10 xl:mr-24 lg:ml-36'}

@@ -1,24 +1,20 @@
 interface Card {
-  titleColor: string;
+  color: string;
   title: string;
   message: string;
   setClassName?: string;
 }
 
-export default function Card({
-  titleColor,
-  title,
-  message,
-  setClassName,
-}: Card) {
+export default function Card({ color, title, message, setClassName }: Card) {
   return (
     <div
-      className={`h-24 w-full md:w-1/3 flex flex-col justify-center px-4 rounded-xl ${setClassName}`}>
+      className={`h-24 w-full md:w-1/3 flex flex-col justify-center px-4 rounded-xl border-2 border-${color} ${setClassName}`}>
       <h3
-        className={`font-grotestk font-bold text-sm xl:text-base leading-5 ${titleColor}`}>
+        className={`font-grotestk font-bold text-sm xl:text-xl leading-5 text-${color}`}>
         {title}
       </h3>
-      <p className='text-white font-overpass font-light text-xs lg:text-sm mt-4'>
+      <p
+        className={`text-${color} font-overpass font-light text-xs lg:text-base mt-4`}>
         {message}
       </p>
     </div>
