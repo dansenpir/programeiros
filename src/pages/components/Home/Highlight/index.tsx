@@ -18,7 +18,7 @@ export default function Highlight() {
     setTimeout(() => {
       if (counter <= animation.length - 2) setCounter(counter + 1);
       else setCounter(0);
-    }, 5000);
+    }, 1500);
     setCategory(animation[counter][0]);
     setCategoryTextColor(animation[counter][1]);
   }, [counter]);
@@ -47,7 +47,7 @@ export default function Highlight() {
           <p className='font-overpass font-normal text-gray text-sm md:text-base leading-5 pt-4 md:pt-12'>
             Conheça também nossas comunidades
           </p>
-          <div className='flex flex-wrap mb-11 sm:mb-0 mt-8 sm:mt-11'>
+          <div className='flex flex-wrap sm:mb-0 mt-8 sm:mt-11'>
             <SocialButton
               link={'https://t.me/+p8PHV0M348k3NjE5'}
               text={'Telegram'}
