@@ -26,7 +26,7 @@ export default function Highlight() {
   return (
     <section className='flex flex-col sm:flex-row items-center justify-between mt-16 pl-10 xl:pl-24'>
       <div className='flex justify-between'>
-        <div className='mt-0 md:mt-16 lg:mt-24 xl:mt-32'>
+        <div className='mt-0 md:mt-10 lg:mt-24 xl:mt-32'>
           {isDesktop ? (
             <h1 className='text-3xl md:text-2xl lg:text-4xl lg:leading-10 xl:text-5xl xl:leading-24 text-dark dark:text-white font-grotesk font-bold w-auto pr-10 sm:pr-0'>
               Aprenda <span className={categoryTextColor}>{category}</span>{' '}
@@ -47,7 +47,7 @@ export default function Highlight() {
           <p className='font-overpass font-normal text-gray text-sm md:text-base leading-5 pt-4 md:pt-12'>
             Conheça também nossas comunidades
           </p>
-          <div className='flex flex-wrap mb-11 sm:mb-0 mt-11'>
+          <div className='flex flex-wrap mb-11 sm:mb-0 mt-8 sm:mt-11'>
             <SocialButton
               link={'https://t.me/+p8PHV0M348k3NjE5'}
               text={'Telegram'}
