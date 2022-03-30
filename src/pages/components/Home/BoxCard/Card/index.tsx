@@ -1,4 +1,16 @@
-export default function Card({ titleColor, title, message, setClassName }) {
+interface Card {
+  titleColor: string;
+  title: string;
+  message: string;
+  setClassName?: string;
+}
+
+export default function Card({
+  titleColor,
+  title,
+  message,
+  setClassName,
+}: Card) {
   return (
     <div
       className={`h-24 w-full md:w-1/3 flex flex-col justify-center px-4 rounded-xl ${setClassName}`}>
