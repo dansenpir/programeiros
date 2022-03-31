@@ -1,7 +1,7 @@
-import Footer from './components/Home/Footer';
+import { Footer } from '../components/Footer';
 import Header from './components/Home/Header';
 import Highlight from './components/Home/Highlight';
-import BoxCard from './components/Home/BoxCard';
+import { BoxCard } from './components/Home/BoxCard';
 
 export default function Home() {
   return (

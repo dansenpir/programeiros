@@ -1,7 +1,7 @@
 import styles from './styles.module.css';
-import Card from './Card';
+import { Card } from './Card';
 
-export default function BoxCard() {
+export function BoxCard() {
   return (
     <section className='mt-56 sm:mt-64'>
       <div className='px-10 xl:px-24'>
