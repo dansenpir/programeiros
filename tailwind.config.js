@@ -12,6 +12,7 @@ module.exports = {
         'btn-telegram': '#0F86D7',
         'blue': '#54A8FC',
         'dark': '#121315',
+        'footer': '#222428',
         'green': '#04C8A7',
         'gray': '#A5A9B2',
         'gray-white': '#DBDDE0',
