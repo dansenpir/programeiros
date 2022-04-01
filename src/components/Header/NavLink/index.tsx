@@ -1,4 +1,4 @@
-export default function NavLink() {
+export function NavLink() {
   return (
     <nav className='relative z-10 flex items-center'>
       <div>

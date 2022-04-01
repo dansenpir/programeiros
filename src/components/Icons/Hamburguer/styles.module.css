@@ -4,7 +4,7 @@
 
   width: 2em;
   height: 1em;
-  margin: 3em;
+  margin: 1em;
   z-index: 100;
   cursor: pointer;
   outline: none;
@@ -12,8 +12,8 @@
 
 .lines {
   background-color: var(--texts-and-icons);
-  width: 100%;
-  height: 5px;
+  width: 70%;
+  height: 2px;
   margin: 5px 0;
   transition: all 450ms var(--transition-type);
 }
