@@ -13,13 +13,19 @@ export function Hamburguer({ isOpen = false }: HamburProps) {
         }`}
       >
         <div
-          className={`${styles.lines} ${isOpen && styles["line-top"]}`}
+          className={`${styles.lines} ${isOpen && styles["line-top"]} ${
+            isOpen ? "h-1.25" : "h-0.5"
+          }`}
         ></div>
         <div
-          className={`${styles.lines} ${isOpen && styles["line-mid"]}`}
+          className={`${styles.lines} ${isOpen && styles["line-mid"]} ${
+            isOpen ? "h-1.25" : "h-0.5"
+          }`}
         ></div>
         <div
-          className={`${styles.lines} ${isOpen && styles["line-bottom"]}`}
+          className={`${styles.lines} ${isOpen && styles["line-bottom"]} ${
+            isOpen ? "h-1.25" : "h-0.5"
+          }`}
         ></div>
       </div>
     </div>

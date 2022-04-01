@@ -13,7 +13,6 @@
 .lines {
   background-color: var(--texts-and-icons);
   width: 70%;
-  height: 2px;
   margin: 5px 0;
   transition: all 450ms var(--transition-type);
 }
