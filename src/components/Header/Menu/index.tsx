@@ -1,12 +1,9 @@
-//import { useBreakpoint } from "../../../hooks/tailwind";
 import { Hamburguer } from "../../Icons/Hamburguer";
-
 import { NavMobile } from "../NavMobile";
 import { useState } from "react";
 
 export function Menu() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
-  //const isDesktop = useBreakpoint("sm");
 
   return (
     <>

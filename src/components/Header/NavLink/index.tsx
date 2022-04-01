@@ -1,10 +1,6 @@
 export function NavLink() {
   return (
-    <nav className="relative z-10 flex items-center">
-      <div>
-        <img src="/images/logo.svg" alt="logo do programeiros" />
-      </div>
-
+    <nav className=" z-10 flex items-center ">
       <ul className="hidden ml-20 font-normal text-white sm:flex font-overpass">
         <li className="p-5">
           <a href="#" className="hover:text-btn-border">

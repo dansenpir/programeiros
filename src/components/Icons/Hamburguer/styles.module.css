@@ -1,7 +1,6 @@
 .hamburguer {
   --texts-and-icons: #fff;
   --transition-type: ease-in;
-
   width: 2em;
   height: 1em;
   margin: 1em;
