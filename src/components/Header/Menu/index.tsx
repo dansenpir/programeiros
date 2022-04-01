@@ -1,7 +1,7 @@
 //import { useBreakpoint } from "../../../hooks/tailwind";
 import { Hamburguer } from "../../Icons/Hamburguer";
 
-import NavMobile from "../NavMobile";
+import { NavMobile } from "../NavMobile";
 import { useState } from "react";
 
 export function Menu() {
