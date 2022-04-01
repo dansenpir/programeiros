@@ -1,4 +1,4 @@
-import { NavLink } from "./NavLink";
+//import { NavLink } from "./NavLink";
 import { Menu } from "./Menu";
 import { BiSun } from "react-icons/bi";
 
@@ -7,7 +7,7 @@ export function Header() {
     <header className="px-8 pt-8">
       <div className="xl:w-11/12 xl:mx-auto">
         <div className="container flex items-center justify-between">
-          <div className="flex justify-between">
+          <div className="flex justify-between w-full ">
             <div className="pr-10">
               <img
                 src="/images/logo.svg"
@@ -15,7 +15,7 @@ export function Header() {
                 className="max-w-none"
               />
             </div>
-            <NavLink />
+            {/* <NavLink /> */}
             <div className="flex">
               <button className="text-base text-white font-grotesk rounded-xl	border-2 border-white	p-3">
                 Entrar

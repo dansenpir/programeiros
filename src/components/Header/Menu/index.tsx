@@ -7,7 +7,7 @@ export function Menu() {
 
   return (
     <>
-      <button onClick={() => setIsOpenMenu(!isOpenMenu)}>
+      <button className="mr-8" onClick={() => setIsOpenMenu(!isOpenMenu)}>
         <Hamburguer isOpen={isOpenMenu} />
       </button>
 
