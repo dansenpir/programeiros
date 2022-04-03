@@ -6,7 +6,7 @@ interface HamburProps {
 
 export function Hamburguer({ isOpen = false }: HamburProps) {
   return (
-    <div className="border-2 border-white w-14 rounded-xl">
+    <div className="border-2 border-white w-14 rounded-xl xl:hidden">
       <div
         className={`${styles.hamburguer} relative ${
           isOpen && styles["close-hamburguer"]

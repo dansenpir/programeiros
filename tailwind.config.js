@@ -33,6 +33,9 @@ module.exports = {
       height: {
         1.25: "0.3125rem",
       },
+      margin: {
+        150: "37.5rem",
+      },
     },
     fontFamily: {
       grotesk: ["Space Grotesk", "sans-serif"],
