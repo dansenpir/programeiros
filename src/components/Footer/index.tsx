@@ -1,4 +1,4 @@
-export function Footer() {
+function Footer() {
   return (
     <footer className='bg-footer mt-64'>
       <div className='py-12 md:py-0 md:pb-12 md:pt-14'>
@@ -66,3 +66,5 @@ export function Footer() {
     </footer>
   );
 }
+
+export { Footer };
