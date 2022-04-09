@@ -5,7 +5,7 @@ interface Card {
   setClassName?: string;
 }
 
-export function Card({ color, title, message, setClassName }: Card) {
+function Card({ color, title, message, setClassName }: Card) {
   return (
     <div
       className={`h-36 md:h-52 w-full md:w-96 flex flex-col px-4 rounded-3xl border-2 border-${color} ${setClassName}`}>
@@ -20,3 +20,5 @@ export function Card({ color, title, message, setClassName }: Card) {
     </div>
   );
 }
+
+export { Card };

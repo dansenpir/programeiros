@@ -8,7 +8,7 @@ interface SocialButton {
   setClassName?: string;
 }
 
-export function SocialButton({
+function SocialButton({
   link,
   text,
   textColor,
@@ -29,3 +29,5 @@ export function SocialButton({
     </div>
   );
 }
+
+export { SocialButton };
