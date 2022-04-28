@@ -7,3 +7,4 @@ export * from './NavMobile';
 export * from './Card';
 export * from './BoxCard';
 export * from './Highlight';
+export * from './DarkModeButton'
