@@ -7,7 +7,7 @@ const DarkModeButton = () => {
   const [icon, setIcon] = useState(<FiSun />);
 
   useEffect(() => {
-    theme === 'light' ? setIcon(<FiSun />) : setIcon(<FiMoon />);
+    theme === 'light' ? setIcon(<FiMoon />) : setIcon(<FiSun />);
   });
 
   return (
