@@ -1,26 +1,25 @@
 import styles from './styles.module.css';
 import { SocialButton } from '../SocialButton/index';
+import Image from 'next/image';
 
 function Highlight() {
   return (
-    <section className='flex flex-col sm:flex-row items-center justify-between mt-16 pl-10 xl:pl-24'>
+    <section className='flex flex-col sm:flex-row items-center justify-between mt-16 mx-10 xl:mx-16'>
       <div className='flex justify-between'>
-        <div className='mt-0 md:mt-10 lg:mt-24 xl:mt-32'>
-          <div className='w-4/5 sm:w-3/5 md:4/5 lg:w-auto'>
-            <h1 className='text-3xl md:text-4xl lg:leading-10 xl:text-5xl xl:leading-24 text-dark dark:text-white font-grotesk font-bold'>
-              Aprenda <span className={styles.textBlue}>programação</span>
-              <br />
-              na prática com outros membros da comunidade.
-            </h1>
-            <h3 className='font-overpass font-light text-green text-md lg:text-xl lg:leading-7 xl:text-2-5xl xl:leading-9 pt-5 md:pt-6'>
-              Traceje rotas de estudo, encontre vagas, descubra e aprenda mais
-              sobre design e programação.
-            </h3>
-          </div>
+        <div className='mt-0 md:mt-10 lg:mt-24 xl:mt-32 w-4/5 sm:w-3/5 xl:w-1/2 2xl:w-2/5'>
+          <h1 className='text-3xl md:text-4xl lg:leading-10 xl:text-5xl xl:leading-24 text-dark dark:text-white font-grotesk font-bold'>
+            Aprenda <span className={styles.textBlue}>programação</span>
+            <br />
+            na prática com outros membros da comunidade.
+          </h1>
+          <h3 className='font-overpass font-light text-green text-md lg:text-xl lg:leading-7 xl:text-2-5xl xl:leading-9 pt-5 md:pt-6'>
+            Traceje rotas de estudo, encontre vagas, descubra e aprenda mais
+            sobre programação.
+          </h3>
           <p className='font-overpass font-normal text-gray text-sm md:text-base leading-5 pt-4 md:pt-12'>
             Conheça também nossas comunidades
           </p>
-          <div className='flex flex-wrap sm:mb-0 mt-8 sm:mt-11'>
+          <div className='flex flex-wrap sm:mb-0 mt-4'>
             <SocialButton
               link={'https://t.me/+p8PHV0M348k3NjE5'}
               text={'Telegram'}
@@ -28,7 +27,7 @@ function Highlight() {
               borderColor={'border-btn-telegram'}
               image={'/images/telegram_icon.svg'}
               alt={'Ícone do Telegram'}
-              setClassName={'mb-8 sm:mb-0'}
+              setClassName={'mb-4 sm:mb-0'}
             />
             <SocialButton
               link={'https://discord.gg/pDxbmrzNaJ'}
@@ -49,8 +48,14 @@ function Highlight() {
             />
           </div>
         </div>
-        <div className='hidden lg:block w-auto md:w-5/6 xl:w-3/4 pl-44'>
-          <img src='/images/highlight.svg' alt='Ilustração Highlight' />
+        <div className='hidden lg:block lg:mt-24 xl:mt-40 lg:ml-32'>
+          <Image
+            className='w-full h-full'
+            src='/images/highlight.svg'
+            width={424}
+            height={370}
+            alt='Programador'
+          />
         </div>
       </div>
     </section>
