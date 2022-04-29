@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 const Header = () => {
   const { theme } = useTheme();
-  const [logo, setLogo] = useState('');
+  const [logo, setLogo] = useState('/images/logo_black.svg');
 
   useEffect(() => {
     theme === 'light'
