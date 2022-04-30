@@ -1,19 +1,18 @@
-import { Hamburguer } from '../Icons/Hamburguer';
-import { NavMobile } from '../NavMobile';
 import { useState } from 'react';
+import { Hamburguer, NavbarMobile } from '../../components';
 
-function MenuHamburguer() {
-  const [isOpenMenu, setIsOpenMenu] = useState(false);
+const MenuHamburguer = () => {
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <>
-      <button className='mr-8' onClick={() => setIsOpenMenu(!isOpenMenu)}>
-        <Hamburguer isOpen={isOpenMenu} />
+      <button onClick={() => setIsActive(!isActive)}>
+        <Hamburguer isOpen={isActive} />
       </button>
 
-      {isOpenMenu && <NavMobile />}
+      {isActive && <NavbarMobile />}
     </>
   );
-}
+};
 
 export { MenuHamburguer };

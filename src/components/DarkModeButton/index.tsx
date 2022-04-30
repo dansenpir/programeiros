@@ -12,7 +12,7 @@ const DarkModeButton = () => {
 
   return (
     <button
-      className='rounded-xl border-2 border-dark dark:border-white p-3 mx-5 text-dark dark:text-white text-2xl xl:mx-4 h-14'
+      className='rounded-xl border-2 border-dark dark:border-white py-3 px-4 mx-5 lg:mx-0 xl:mx-4 ml-5 text-dark dark:text-white text-2xl  h-13'
       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
       {icon}
     </button>
