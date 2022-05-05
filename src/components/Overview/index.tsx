@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import { Card } from '..';
+import { Card } from '../../components';
 
 function Overview() {
   return (
