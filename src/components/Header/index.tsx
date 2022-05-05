@@ -15,23 +15,21 @@ const Header = () => {
   });
 
   return (
-    <header className='px-8 lg:px-16 pt-8 w-full'>
-      <div className='xl:w-11/12 xl:mx-auto'>
-        <div className='container flex justify-between'>
-          <div className='flex justify-between w-full'>
-            <div className='flex items-center justify-center'>
-              <div className='cursor-pointer mr-16'>
-                <img src={logo} alt='logo Programeiros' />
-              </div>
-              <Navbar />
+    <header className='mx-8 lg:mx-16 mt-8'>
+      <div className='flex justify-between'>
+        <div className='flex justify-between w-full'>
+          <div className='flex items-center justify-center'>
+            <div className='cursor-pointer mr-16'>
+              <img src={logo} alt='logo Programeiros' />
             </div>
-            <div className='flex xl:w-32'>
-              <button className='text-base xl:text-xl text-dark dark:text-white font-grotesk rounded-xl border-2 border-dark dark:border-white p-3 lg:mx-5 xl:h-13'>
-                Entrar
-              </button>
-              <DarkModeButton />
-              {isDesktop ? null : <MenuHamburguer />}
-            </div>
+            <Navbar />
+          </div>
+          <div className='flex'>
+            <button className='text-base xl:text-xl text-dark dark:text-white font-grotesk rounded-xl border-2 border-dark dark:border-white p-3 lg:mx-5 xl:h-13'>
+              Entrar
+            </button>
+            <DarkModeButton />
+            {isDesktop ? null : <MenuHamburguer />}
           </div>
         </div>
       </div>
