@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 function Highlight() {
   return (
-    <section className='flex flex-col sm:flex-row items-center justify-between mt-16 mx-8 lg:mx-16'>
-      <div className='mt-0 md:mt-10 lg:mt-24 xl:mt-32 w-4/5 sm:w-3/5 xl:w-1/2 2xl:w-2/5'>
+    <section className='flex flex-col sm:flex-row items-center justify-between mt-16 mx-8 md:mx-16'>
+      <div className='mt-0 md:mt-10 lg:mt-24 xl:mt-32 w-4/5 xl:w-1/2 2xl:w-2/5'>
         <h1 className='text-3xl md:text-4xl lg:leading-10 xl:text-5xl xl:leading-24 text-dark dark:text-white font-grotesk font-bold'>
           Aprenda <span className={styles.textBlue}>programação</span>
           <br />
