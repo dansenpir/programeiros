@@ -12,7 +12,7 @@ const Header = () => {
     theme === 'light'
       ? setLogo('/images/logo_black.svg')
       : setLogo('/images/logo.svg');
-  });
+  }, [theme]);
 
   return (
     <header className='mx-8 md:mx-16 mt-8'>
