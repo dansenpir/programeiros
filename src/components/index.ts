@@ -4,7 +4,7 @@ export * from './SocialButton';
 export * from './Hamburguer';
 export * from './MenuHamburguer';
 export * from './Card';
-export * from './BoxCard';
+export * from './Overview';
 export * from './Highlight';
 export * from './DarkModeButton';
 export * from './Navbar';

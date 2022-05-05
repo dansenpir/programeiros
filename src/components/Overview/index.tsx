@@ -1,7 +1,7 @@
 import styles from './styles.module.css';
 import { Card } from '..';
 
-function BoxCard() {
+function Overview() {
   return (
     <section className='mt-56 sm:mt-64'>
       <div className='px-10 xl:px-24'>
@@ -43,4 +43,4 @@ function BoxCard() {
   );
 }
 
-export { BoxCard };
+export { Overview };
