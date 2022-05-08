@@ -4,7 +4,7 @@ import { Card } from '../../components';
 function Overview() {
   return (
     <section className='mt-56 sm:mt-64 mx-8 md:mx-16'>
-      <div>
+      <div className='w-4/5 xl:w-3/5'>
         <h1
           className={`${styles.textRainbow} font-grotesk font-bold text-3xl md:text-4xl xl:text-5xl xl:leading-24`}>
           Está pronto para começar?
