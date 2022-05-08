@@ -5,20 +5,20 @@ import Image from 'next/image';
 function Highlight() {
   return (
     <section className='flex flex-col sm:flex-row items-center justify-between mt-16 mx-8 md:mx-16'>
-      <div className='mt-0 md:mt-10 lg:mt-24 xl:mt-32 w-4/5 xl:w-1/2 2xl:w-2/5'>
-        <h1 className='text-3xl md:text-4xl lg:leading-10 xl:text-5xl xl:leading-24 text-dark dark:text-white font-grotesk font-bold'>
+      <div className='mt-0 md:mt-10 lg:mt-24 xl:mt-32 sm:w-4/5 xl:w-1/2 2xl:w-2/5 mr-4 sm:mr-0'>
+        <h1 className='text-3xl md:text-4xl lg:leading-10 xl:text-5xl xl:leading-24 text-dark dark:text-white font-grotesk font-bold sm:mr-4'>
           Aprenda <span className={styles.textBlue}>programação</span>
           <br />
           na prática com outros membros da comunidade.
         </h1>
-        <h3 className='font-overpass font-light text-green text-md lg:text-xl lg:leading-7 xl:text-2-5xl xl:leading-9 pt-5 md:pt-6'>
+        <h3 className='font-overpass font-light text-green text-xl lg:leading-7 xl:text-2-5xl xl:leading-9 pt-5 md:pt-6'>
           Traceje rotas de estudo, encontre vagas, descubra e aprenda mais sobre
           programação.
         </h3>
-        <p className='font-overpass font-normal text-gray text-sm md:text-base leading-5 pt-4 md:pt-12'>
-          Conheça também nossas comunidades
+        <p className='font-overpass font-normal text-gray text-base leading-5 pt-4 md:pt-12'>
+          Conheça também nossas comunidades:
         </p>
-        <div className='flex flex-wrap sm:mb-0 mt-4'>
+        <div className='flex flex-wrap sm:mb-0 mt-8'>
           <SocialButton
             link={'https://t.me/+p8PHV0M348k3NjE5'}
             text={'Telegram'}
@@ -26,7 +26,7 @@ function Highlight() {
             borderColor={'border-btn-telegram'}
             image={'/images/telegram_icon.svg'}
             alt={'Ícone do Telegram'}
-            setClassName={'mb-4 sm:mb-0'}
+            setClassName={'mb-14 sm:mb-0 mr-14 sm:mr-0'}
           />
           <SocialButton
             link={'https://discord.gg/pDxbmrzNaJ'}
