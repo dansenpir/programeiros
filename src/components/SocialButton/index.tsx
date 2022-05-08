@@ -21,8 +21,8 @@ function SocialButton({
     <div className={setClassName}>
       <a href={link} target='_blank' rel='noreferrer'>
         <button
-          className={`flex items-center border-1 border-solid ${borderColor} rounded-xl py-1 md:py-2 px-2 text-xs lg:text-base font-grotesk font-normal leading-5`}>
-          <img className='w-4 lg:w-6' src={image} alt={alt} />
+          className={`flex items-center border-1 border-solid ${borderColor} rounded-xl py-2 px-2 text-base font-grotesk font-normal leading-5 h-12 w-32`}>
+          <img src={image} alt={alt} />
           <p className={`ml-2 ${textColor}`}>{text}</p>
         </button>
       </a>
