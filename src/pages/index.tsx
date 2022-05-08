@@ -1,4 +1,4 @@
-import { Footer, Header, Highlight, Overview } from '../components';
+import { Footer, Header, Highlight, Overview, LearningGuide } from '../components';
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <Header />
       <Highlight />
       <Overview />
+      <LearningGuide />
       <Footer />
     </main>
   );

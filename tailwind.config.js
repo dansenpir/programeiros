@@ -19,6 +19,7 @@ module.exports = {
         'gray-dark': '#41454C',
         orange: '#C8A704',
         red: '#C82504',
+        black_two: '#222428'
       },
       fontSize: {
         'text-2.5xl': '1.75rem',

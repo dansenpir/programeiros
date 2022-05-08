@@ -9,3 +9,4 @@ export * from './Highlight';
 export * from './DarkModeButton';
 export * from './Navbar';
 export * from './NavbarMobile';
+export * from './LearningGuide'
