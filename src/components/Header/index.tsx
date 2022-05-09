@@ -1,18 +1,11 @@
-import { MenuHamburguer, Navbar, DarkModeButton } from '../index';
+import { MenuHamburguer, Navbar, DarkModeButton } from '../../components';
 import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
 import { useBreakpoint } from '../../hooks/tailwind';
+import Logo from '../../../public/images/logo.svg';
 
 const Header = () => {
   const { theme } = useTheme();
-  const [logo, setLogo] = useState('/images/logo_black.svg');
   const isDesktop = useBreakpoint('lg');
-
-  useEffect(() => {
-    theme === 'light'
-      ? setLogo('/images/logo_black.svg')
-      : setLogo('/images/logo.svg');
-  }, [theme]);
 
   return (
     <header className='mx-8 md:mx-16 mt-8'>
@@ -20,7 +13,7 @@ const Header = () => {
         <div className='flex justify-between w-full'>
           <div className='flex items-center justify-center'>
             <div className='cursor-pointer mr-16'>
-              <img src={logo} alt='logo Programeiros' />
+              {theme === 'light' ? <Logo /> : <Logo fill={'white'} />}
             </div>
             <Navbar />
           </div>
