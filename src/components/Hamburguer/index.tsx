@@ -5,7 +5,7 @@ interface HamburProps {
 }
 
 const Hamburguer = ({ isOpen = false }: HamburProps) => (
-  <div className='flex justify-center items-center'>
+  <div className='flex justify-center items-center lg:hidden'>
     {isOpen ? (
       <div className='flex items-center justify-center w-14 h-14 z-50 cursor-pointer border-2 border-dark dark:border-white rounded-xl hover:bg-dark dark:hover:bg-white hover:bg-opacity-5 dark:hover:bg-opacity-5 focus:bg-opacity-[.15] dark:focus:bg-opacity-[.15]'>
         <FiX className='w-7 h-7' />
