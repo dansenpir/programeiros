@@ -18,33 +18,10 @@ function Highlight() {
         <p className='font-overpass font-normal text-gray text-base leading-5 pt-4 md:pt-12'>
           Conheça também nossas comunidades:
         </p>
-        <div className='flex flex-wrap sm:mb-0 mt-8'>
-          <SocialButton
-            link={'https://t.me/+p8PHV0M348k3NjE5'}
-            text={'Telegram'}
-            textColor={'text-btn-telegram'}
-            borderColor={'border-btn-telegram'}
-            image={'/images/telegram_icon.svg'}
-            alt={'Ícone do Telegram'}
-            setClassName={'mb-14 sm:mb-0 mr-14 sm:mr-0'}
-          />
-          <SocialButton
-            link={'https://discord.gg/pDxbmrzNaJ'}
-            text={'Discord'}
-            textColor={'text-btn-discord'}
-            borderColor={'border-btn-discord'}
-            image={'/images/discord_icon.svg'}
-            alt={'Ícone do Discord'}
-            setClassName={'mx-4 sm:mx-8'}
-          />
-          <SocialButton
-            link={'https://github.com/programeiros'}
-            text={'GitHub'}
-            textColor={'text-btn-github'}
-            borderColor={'border-btn-github'}
-            image={'/images/github_icon.svg'}
-            alt={'Ícone do GitHub'}
-          />
+        <div className='flex flex-wrap sm:flex-nowrap mt-8'>
+          <SocialButton text={'Telegram'} />
+          <SocialButton text={'Discord'} />
+          <SocialButton text={'GitHub'} />
         </div>
       </div>
       <div className='hidden lg:block lg:mt-24 xl:mt-40 lg:ml-32'>

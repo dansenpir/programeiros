@@ -7,19 +7,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        black_two: '#222428',
         'btn-discord': '#5865F2',
         'btn-github': '#0969DA',
         'btn-telegram': '#0F86D7',
         blue: '#54A8FC',
         dark: '#121315',
+        discord: '#2D3DEF',
         footer: '#222428',
+        github: '#085CBD',
         green: '#04C8A7',
         gray: '#A5A9B2',
         'gray-white': '#DBDDE0',
         'gray-dark': '#41454C',
         orange: '#C8A704',
         red: '#C82504',
-        black_two: '#222428'
+        telegram: '#0D73B8',
       },
       fontSize: {
         'text-2.5xl': '1.75rem',
