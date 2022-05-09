@@ -8,7 +8,7 @@ interface Card {
 function Card({ color, title, message, setClassName }: Card) {
   return (
     <div
-      className={`h-40 md:h-52 w-full md:w-72 flex flex-col px-4 rounded-3xl border-2 border-${color} ${setClassName}`}>
+      className={`h-40 md:h-52 w-full md:w-72 flex flex-col px-4 rounded-3xl border-2 border-${color} ${setClassName} hover:bg-${color} hover:bg-opacity-10`}>
       <h3
         className={`font-grotesk font-bold text-xl leading-5 mt-4 text-${color}`}>
         {title}
