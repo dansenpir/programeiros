@@ -2,10 +2,16 @@ import { MenuHamburguer, Navbar, DarkModeButton } from '../../components';
 import { useTheme } from 'next-themes';
 import { useBreakpoint } from '../../hooks/tailwind';
 import Logo from '../../../public/images/logo.svg';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
   const { theme } = useTheme();
   const isDesktop = useBreakpoint('lg');
+  const [logoColor, setLogoColor] = useState('#41454C');
+
+  useEffect(() => {
+    theme === 'dark' ? setLogoColor('#fff') : setLogoColor('#000');
+  }, [theme]);
 
   return (
     <header className='mx-8 md:mx-16 mt-8'>
@@ -13,7 +19,7 @@ const Header = () => {
         <div className='flex justify-between w-full'>
           <div className='flex items-center justify-center'>
             <div className='cursor-pointer mr-16'>
-              {theme === 'dark' ? <Logo fill='#fff' /> : <Logo fill='#000' />}
+              <Logo fill={`${logoColor}`} />
             </div>
             <Navbar />
           </div>
