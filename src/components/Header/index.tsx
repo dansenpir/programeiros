@@ -13,7 +13,7 @@ const Header = () => {
         <div className='flex justify-between w-full'>
           <div className='flex items-center justify-center'>
             <div className='cursor-pointer mr-16'>
-              {theme === 'light' ? <Logo /> : <Logo fill={'white'} />}
+              {theme === 'dark' ? <Logo fill='#fff' /> : <Logo fill='#000' />}
             </div>
             <Navbar />
           </div>
