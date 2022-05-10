@@ -1,28 +1,52 @@
-import { sections } from "../../assets/ts/mocks";
+import Image from 'next/image';
+import { LearningCard, GoTo } from '../../components';
 
 const LearningGuide = () => (
   <>
-    <div className="flex flex-col justify-center items-center text-left">
-      <h2 className="mt-8 mr-6 text-orange font-bold text-2xl">Aprenda com um guia</h2>
-      <p className="mt-8 text-sm ml-6">
-        Guias educacionais criados para você saber o que deve estudar para
-        qualquer tecnologia.
-      </p>
-      <div>
-        {sections.map((item, i) => (
-          <section
-            key={i}
-            className="bg-black_two mt-12 p-6 border border-gray rounded-lg w-80"
-          >
-            <h3 className="text-red font-bold text-lg">{item.title}</h3>
-          <p className="mt-6 w-56 text-sm">{item.description}</p>
-          </section>
-        ))}
+    <section className='mt-16 mx-8 md:mx-16 flex flex-col lg:flex-row items-start justify-between'>
+      <div className='sm:w-4/5 xl:w-1/2 2xl:w-2/5 order-2 lg:order-none'>
+        <div className='mb-16'>
+          <h3 className='mt-8 mr-6 font-grotesk text-orange font-bold text-3xl md:text-4xl xl:text-5xl'>
+            Aprenda com um guia
+          </h3>
+          <p className='mt-8 font-overpass text-gray-dark dark:text-white font-light text-base md:text-xl'>
+            Guias educacionais criados para você saber o que deve estudar para
+            qualquer tecnologia.
+          </p>
+        </div>
+
+        <div className='flex flex-col'>
+          <LearningCard
+            title='Roadmap'
+            description='Mapa mental que te mostra o passo a passo para aprender diferentes áreas de conhecimento.'
+          />
+          <LearningCard
+            title='Indicação de materiais'
+            description='Indicação de podcasts, livros, artigos, cursos, etc, selecionada para reforçar o aprendizado.'
+          />
+          <LearningCard
+            title='Reviews de cursos'
+            description='Análises de diversos cursos para lhe ajudar a escolher o melhor dentre vários para estudar.'
+          />
+        </div>
       </div>
-    </div>
-    <button className="mt-8 ml-6 text-orange border border-orange p-3 rounded-lg">
-      Vá para o guia
-    </button>
+
+      <div className='order-1 lg:order-none pr-10 lg:pr-0'>
+        <Image
+          src='/images/learning_guide.svg'
+          width={424}
+          height={370}
+          alt='Programador'
+        />
+      </div>
+    </section>
+
+    <GoTo
+      text='Vá para o guia'
+      color='orange'
+      hoverColor='orange'
+      clickedColor='orange-dark'
+    />
   </>
 );
 
