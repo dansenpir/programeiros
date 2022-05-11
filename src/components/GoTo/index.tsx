@@ -4,11 +4,12 @@ import ArrowRight from '../../../public/images/arrow_right.svg';
 interface GoTo {
   text: string;
   color: string;
+  arrowColor: string;
   hoverColor: string;
   clickedColor: string;
 }
 
-const GoTo = ({ text, color, hoverColor, clickedColor }: GoTo) => {
+const GoTo = ({ text, color, arrowColor, hoverColor, clickedColor }: GoTo) => {
   const [isHover, setIsHover] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
   const hoverHandle = () => setIsHover(true);
@@ -23,7 +24,7 @@ const GoTo = ({ text, color, hoverColor, clickedColor }: GoTo) => {
       onMouseLeave={() => leaveHandle()}
       onMouseDown={() => clickHandle()}
       onMouseUp={() => clickHandle()}
-      className={`h-12 w-44 mt-8 mx-8 md:mx-16 border-1 border-${color} p-3 rounded-xl flex items-center justify-center ${
+      className={`mx-8 md:mx-16 h-12 w-48 border-1 border-${color} p-3 rounded-xl flex items-center justify-center ${
         isHover && `bg-${hoverColor} dark:hover:bg-${hoverColor}`
       }
           ${isClicked && `bg-${clickedColor} dark:focus:bg-${clickedColor}`}`}>
@@ -36,7 +37,7 @@ const GoTo = ({ text, color, hoverColor, clickedColor }: GoTo) => {
       {isHover || isClicked ? (
         <ArrowRight fill='white' />
       ) : (
-        <ArrowRight fill={`${color}`} />
+        <ArrowRight fill={`${arrowColor}`} />
       )}
     </button>
   );
