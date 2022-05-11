@@ -16,6 +16,7 @@ module.exports = {
         footer: '#222428',
         github: '#085CBD',
         green: '#04C8A7',
+        'green-dark': '#03AB8F',
         gray: '#A5A9B2',
         'gray-white': '#DBDDE0',
         'gray-dark': '#41454C',
