@@ -5,6 +5,7 @@ import {
   Overview,
   LearningGuide,
   JobsOverview,
+  CommunityOverview,
 } from '../components';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Overview />
       <LearningGuide />
       <JobsOverview />
+      <CommunityOverview />
       <Footer />
     </main>
   );
