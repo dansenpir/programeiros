@@ -26,7 +26,7 @@ const JobsOverview = () => (
         />
       </div>
     </section>
-    <div className='mt-12 lg:mt-0 order-3 lg:order-none pr-10 lg:pr-0'>
+    <div className='mt-12 lg:-mt-4 xl:-mt-20 order-3 lg:order-none pr-10 lg:pr-0'>
       <GoTo
         text='Vá para as vagas'
         color='green'

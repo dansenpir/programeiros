@@ -13,3 +13,4 @@ export * from './LearningGuide';
 export * from './LearningCard';
 export * from './GoTo';
 export * from './JobsOverview';
+export * from './CommunityOverview';
