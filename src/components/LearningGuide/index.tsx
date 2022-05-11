@@ -4,7 +4,7 @@ import { LearningCard, GoTo } from '../../components';
 const LearningGuide = () => (
   <>
     <section className='mt-16 mx-8 md:mx-16 flex flex-col lg:flex-row items-start justify-between'>
-      <div className='sm:w-4/5 xl:w-1/2 2xl:w-2/5 lg:pr-24 order-2 lg:order-none'>
+      <div className='sm:w-4/5 xl:w-1/2 2xl:w-2/5 lg:pr-24 xl:pr-0 order-2 lg:order-none'>
         <div className='mb-16'>
           <h3 className='mt-8 mr-6 font-grotesk text-orange font-bold text-3xl md:text-4xl xl:text-5xl'>
             Aprenda com um guia
