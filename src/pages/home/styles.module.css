@@ -1,0 +1,18 @@
+.textBlue {
+  background: linear-gradient(89.36deg, #0466c8 0.55%, #54a8fc 99.45%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.textRainbow {
+  background: linear-gradient(
+    89.36deg,
+    #04c8a7 0.55%,
+    #0466c8 37.12%,
+    #8c04c7 61.33%,
+    #c80480 99.45%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
