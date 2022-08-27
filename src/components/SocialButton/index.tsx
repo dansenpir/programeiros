@@ -40,14 +40,15 @@ function SocialButton({ text }: SocialButton) {
       setHoverBackgroundColor('btn-telegram');
       setClickedBackgroundColor('telegram');
     }
-  }, []);
+  }, [text]);
 
   return (
     <a
-      className='mb-14 sm:mb-0 mr-4 sm:mr-8'
+      className="mb-14 sm:mb-0 mr-4 sm:mr-8"
       href={link}
-      target='_blank'
-      rel='noreferrer'>
+      target="_blank"
+      rel="noreferrer"
+    >
       <button
         onMouseOver={() => hoverHandle()}
         onMouseLeave={() => leaveHandle()}
@@ -60,7 +61,8 @@ function SocialButton({ text }: SocialButton) {
           ${
             isClicked &&
             `bg-${clickedBackgroundColor} dark:focus:bg-${clickedBackgroundColor}`
-          }`}>
+          }`}
+      >
         {text.toLowerCase() === 'discord' ? (
           <Discord
             {...((isHover || isClicked) && {
@@ -87,7 +89,8 @@ function SocialButton({ text }: SocialButton) {
             isHover || isClicked
               ? `ml-3 text-white dark:text-white`
               : `ml-3 text-${color} dark:text-${color}`
-          }>
+          }
+        >
           {text}
         </p>
       </button>
