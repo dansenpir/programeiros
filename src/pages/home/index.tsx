@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import { Card, GoTo, LearningCard, SocialButton } from '../../components';
+import { Card, GoTo, SocialButton } from '../../components';
 import Image from 'next/image';
 
 export default function Home() {
