@@ -3,6 +3,7 @@ import { useTheme } from 'next-themes';
 import { useBreakpoint } from '../../hooks/tailwind';
 import Logo from '../../../public/images/logo.svg';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 const Header = () => {
   const { theme } = useTheme();
@@ -20,7 +21,9 @@ const Header = () => {
         <div className="flex justify-between w-full">
           <div className="flex items-center justify-center">
             <div className="cursor-pointer mr-16">
-              <Logo fill={`${logoColor}`} />
+              <Link href="/" passHref>
+                <Logo fill={`${logoColor}`} />
+              </Link>
             </div>
             <Navbar />
           </div>
