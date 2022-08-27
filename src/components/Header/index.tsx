@@ -28,7 +28,7 @@ const Header = () => {
             <Navbar />
           </div>
           <div className="flex">
-            <button className="text-base xl:text-xl text-white dark:text-dark font-grotesk rounded-xl border-2 border-white dark:border-dark p-3 lg:mx-5 hover:bg-white dark:hover:bg-dark hover:bg-opacity-5 dark:hover:bg-opacity-5 focus:bg-opacity-20 dark:focus:bg-opacity-20">
+            <button className="text-base xl:text-xl text-dark dark:text-white font-grotesk rounded-xl border-2 border-dark dark:border-white p-3 lg:mx-5 hover:bg-dark dark:hover:bg-white hover:bg-opacity-5 dark:hover:bg-opacity-5 focus:bg-opacity-20 dark:focus:bg-opacity-20">
               Entrar
             </button>
             <DarkModeButton />
