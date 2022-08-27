@@ -10,10 +10,10 @@ const Header = () => {
   const isDesktop = useBreakpoint('lg');
   const [logoColor, setLogoColor] = useState('');
 
-  useEffect(
-    () => (theme === 'light' ? setLogoColor('#121315') : setLogoColor('#fff')),
-    [theme],
-  );
+  useEffect(() => {
+    if (theme === 'dark') return setLogoColor('#fff');
+    return setLogoColor('#121315');
+  }, [theme]);
 
   return (
     <header className="mx-8 md:mx-16 mt-8">
