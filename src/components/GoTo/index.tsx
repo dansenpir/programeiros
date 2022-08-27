@@ -24,18 +24,20 @@ const GoTo = ({ text, color, arrowColor, hoverColor, clickedColor }: GoTo) => {
       onMouseLeave={() => leaveHandle()}
       onMouseDown={() => clickHandle()}
       onMouseUp={() => clickHandle()}
-      className={`mx-8 md:mx-16 h-12 w-48 border-1 border-${color} p-3 rounded-xl flex items-center justify-center ${
+      className={`h-12 w-48 border-1 border-${color} p-3 rounded-xl flex items-center justify-center ${
         isHover && `bg-${hoverColor} dark:hover:bg-${hoverColor}`
       }
-          ${isClicked && `bg-${clickedColor} dark:focus:bg-${clickedColor}`}`}>
+          ${isClicked && `bg-${clickedColor} dark:focus:bg-${clickedColor}`}`}
+    >
       <p
         className={`mr-3 font-grotesk font-normal text-base ${
           isHover ? 'text-white dark:text-white' : `text-${color}`
-        }`}>
+        }`}
+      >
         {text}
       </p>
       {isHover || isClicked ? (
-        <ArrowRight fill='white' />
+        <ArrowRight fill="white" />
       ) : (
         <ArrowRight fill={`${arrowColor}`} />
       )}
