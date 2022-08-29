@@ -1,22 +1,11 @@
-import {
-  Footer,
-  Header,
-  Highlight,
-  Overview,
-  LearningGuide,
-  JobsOverview,
-  CommunityOverview,
-} from '../components';
+import { Footer, Header } from '../components';
+import Home from './home';
 
-export default function Home() {
+export default function Main() {
   return (
-    <main className='w-full max-w-full min-h-screen bg-white dark:bg-dark'>
+    <main className="w-full max-w-full min-h-screen bg-white dark:bg-dark">
       <Header />
-      <Highlight />
-      <Overview />
-      <LearningGuide />
-      <JobsOverview />
-      <CommunityOverview />
+      <Home />
       <Footer />
     </main>
   );

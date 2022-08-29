@@ -39,7 +39,7 @@ function SocialButton({ type, hasText }: SocialButton) {
       setHoverColor('btn-telegram');
       setClickedColor('btn-telegram');
     }
-  }, []);
+  }, [type]);
 
   return (
     <a
