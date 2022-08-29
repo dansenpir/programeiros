@@ -35,7 +35,7 @@ export default function Vagas() {
       <div className="px-16 mt-12 flex flex-wrap gap-11 mx-auto">
         <JobsCard
           jobTitle="Frontend Developer (Pleno)"
-          jobCompanyLogo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png"
+          jobCompanyLogo="/jobs/microsoftLogo.png"
           jobDateTime="Ontem"
           jobDescription="O EasyCrédito está buscando Frontend Developer para compor seu time!
           Somos uma Fintech que conecta pessoas que dispõem de pouco acesso a serviços financeiros ..."
@@ -46,7 +46,7 @@ export default function Vagas() {
         />
         <JobsCard
           jobTitle="Frontend Developer (Pleno)"
-          jobCompanyLogo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png"
+          jobCompanyLogo="/jobs/microsoftLogo.png"
           jobDateTime="Ontem"
           jobDescription="O EasyCrédito está buscando Frontend Developer para compor seu time!
           Somos uma Fintech que conecta pessoas que dispõem de pouco acesso a serviços financeiros ..."
@@ -57,7 +57,7 @@ export default function Vagas() {
         />
         <JobsCard
           jobTitle="Frontend Developer (Pleno)"
-          jobCompanyLogo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png"
+          jobCompanyLogo="/jobs/microsoftLogo.png"
           jobDateTime="Ontem"
           jobDescription="O EasyCrédito está buscando Frontend Developer para compor seu time!
           Somos uma Fintech que conecta pessoas que dispõem de pouco acesso a serviços financeiros ..."
@@ -68,7 +68,7 @@ export default function Vagas() {
         />
         <JobsCard
           jobTitle="Frontend Developer (Pleno)"
-          jobCompanyLogo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png"
+          jobCompanyLogo="/jobs/microsoftLogo.png"
           jobDateTime="Ontem"
           jobDescription="O EasyCrédito está buscando Frontend Developer para compor seu time!
           Somos uma Fintech que conecta pessoas que dispõem de pouco acesso a serviços financeiros ..."
@@ -79,7 +79,7 @@ export default function Vagas() {
         />
         <JobsCard
           jobTitle="Frontend Developer (Pleno)"
-          jobCompanyLogo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png"
+          jobCompanyLogo="/jobs/microsoftLogo.png"
           jobDateTime="Ontem"
           jobDescription="O EasyCrédito está buscando Frontend Developer para compor seu time!
           Somos uma Fintech que conecta pessoas que dispõem de pouco acesso a serviços financeiros ..."
