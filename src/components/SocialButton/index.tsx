@@ -38,6 +38,7 @@ function SocialButton({ type, hasText }: SocialButton) {
 
   const hoverHandle = () => setIsHover(!isHover);
 
+>>>>>>> 9fed5e9 (fix: removes margins and fixes bugs)
   return (
     <a
       className={`flex items-center justify-center border border-${
