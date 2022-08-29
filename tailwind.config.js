@@ -53,7 +53,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['active'],
+      borderColor: ['active']
+    },
   },
   plugins: [],
 };
