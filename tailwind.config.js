@@ -10,20 +10,32 @@ module.exports = {
         'btn-discord': '#5865F2',
         'btn-github': '#0969DA',
         'btn-telegram': '#0F86D7',
-        blue: '#54A8FC',
-        dark: '#121315',
-        discord: '#2D3DEF',
-        footer: '#222428',
-        github: '#085CBD',
-        green: '#04C8A7',
-        'green-dark': '#03AB8F',
-        gray: '#A5A9B2',
+        'jobTypeLabel': '#94C8FD',
+        'jobLevelLabel': '#FDEB94',
+
+        'registerButton': '#0466C8',
+
         'gray-white': '#DBDDE0',
         'gray-dark': '#41454C',
+        'gray.900': '#222428',
+        gray: '#A5A9B2',
+
+        'white.900': '#F6F6F7',
+
+        discord: '#2D3DEF',
+        github: '#085CBD',
+        telegram: '#0D73B8',
+
+        blue: '#54A8FC',
+        dark: '#121315',
+
+        green: '#04C8A7',
+        'green-dark': '#03AB8F',
+
         orange: '#C8A704',
         'orange-dark': '#AB8F03',
+
         red: '#C82504',
-        telegram: '#0D73B8',
       },
       fontSize: {
         'text-2.5xl': '1.75rem',
