@@ -21,29 +21,29 @@ function SocialButton({ type, hasText }: SocialButton) {
   useEffect(() => {
     if (type === 'discord') {
       setUrl('https://discord.gg/pDxbmrzNaJ');
-      setColor('discord');
+      setColor('btn-discord');
       setHoverColor('btn-discord');
-      setClickedColor('btn-discord');
+      setClickedColor('discord');
     }
 
     if (type === 'github') {
       setUrl('https://github.com/programeiros');
-      setColor('github');
+      setColor('btn-github');
       setHoverColor('btn-github');
-      setClickedColor('btn-github');
+      setClickedColor('github');
     }
 
     if (type === 'telegram') {
       setUrl('https://t.me/+p8PHV0M348k3NjE5');
-      setColor('telegram');
+      setColor('btn-telegram');
       setHoverColor('btn-telegram');
-      setClickedColor('btn-telegram');
+      setClickedColor('telegram');
     }
   }, [type]);
 
   return (
     <a
-      className={`flex items-center justify-center border border-${color} rounded-xl font-grotesk h-12 ${hasText ? 'w-32' : 'w-12'} hover:bg-${hoverColor} dark:hover:bg-${hoverColor} ${isHover && `hover:border-${hoverColor} dark:hover:border-${hoverColor} active:border-${clickedColor} active:bg-${clickedColor} dark:active:bg-${clickedColor}`} mb-14 sm:mb-0 mr-4 sm:mr-8 leading-5`}
+      className={`flex items-center justify-center border border-${color} rounded-xl font-grotesk h-12 ${hasText ? 'w-32' : 'w-12'} hover:bg-${hoverColor} dark:hover:bg-${hoverColor} ${isHover && `hover:border-${hoverColor} dark:hover:border-${hoverColor} active:border-${clickedColor} active:bg-${clickedColor} dark:active:bg-${clickedColor}`}`}
       href={url}
       target='_blank'
       rel='noreferrer'
