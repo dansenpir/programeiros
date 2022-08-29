@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
   render() {
@@ -18,9 +18,6 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap"
             rel="stylesheet"
           />
-
-          {/* eslint-disable-next-line @next/next/no-title-in-document-head */}
-          <title>Programeiros</title>
         </Head>
         <body>
           <Main />
