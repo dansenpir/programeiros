@@ -16,7 +16,10 @@ const GoTo = ({ text, color, hoverColor, clickedColor, url }: GoTo) => {
   return (
     <Link href={url} passHref>
       <a
-        className={`inline-flex items-center h-12 px-3 border border-${color} rounded-xl ${isHover && `hover:border-${hoverColor} hover:bg-${hoverColor} dark:hover:bg-${hoverColor} active:border-${clickedColor} active:bg-${clickedColor} dark:active:bg-${clickedColor}`}`}
+        className={`inline-flex items-center h-12 px-3 border border-${color} rounded-xl ${
+          isHover &&
+          `hover:border-${hoverColor} hover:bg-${hoverColor} dark:hover:bg-${hoverColor} active:border-${clickedColor} active:bg-${clickedColor} dark:active:bg-${clickedColor}`
+        }`}
         onMouseEnter={hoverHandle}
         onMouseLeave={hoverHandle}
       >
@@ -26,7 +29,9 @@ const GoTo = ({ text, color, hoverColor, clickedColor, url }: GoTo) => {
           {text}
         </p>
         <ArrowRight
-          className={`ml-3 fill-current ${isHover ? 'text-white' : `text-${color}`}`}
+          className={`ml-3 fill-current ${
+            isHover ? 'text-white' : `text-${color}`
+          }`}
         />
       </a>
     </Link>
