@@ -1,10 +1,15 @@
 import { Footer, Header, JobsCard } from '../../components';
 import Image from 'next/image';
 import { GoTo } from '../../components';
+import Head from 'next/head';
 
 export default function Vagas() {
   return (
     <main className="w-full max-w-full min-h-screen bg-white dark:bg-dark">
+      <Head>
+        <title>Programeiros | Vagas</title>
+        <meta property="og:title" content="Programeiros | Vagas" key="title" />
+      </Head>
       <Header />
       <section className="mt-48 mx-8 md:mx-16 flex flex-col lg:flex-row items-start justify-between">
         <div className="lg:w-4/5 xl:w-1/2 2xl:w-2/5 lg:pr-30 order-2 lg:order-none">

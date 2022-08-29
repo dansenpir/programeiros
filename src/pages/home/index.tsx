@@ -1,10 +1,15 @@
 import styles from './styles.module.css';
 import { Card, GoTo, SocialButton } from '../../components';
 import Image from 'next/image';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <main className="mx-8 md:mx-16">
+      <Head>
+        <title>Programeiros</title>
+        <meta property="og:title" content="Programeiros" key="title" />
+      </Head>
       <section className="flex flex-col sm:flex-row items-center justify-between mt-16">
         <div className="mt-0 md:mt-10 lg:mt-24 xl:mt-32 sm:w-4/5 xl:w-1/2 2xl:w-2/5 mr-4 sm:mr-0">
           <h1 className="text-3xl md:text-4xl lg:leading-10 xl:text-5xl xl:leading-24 text-dark dark:text-white font-grotesk font-bold sm:mr-4">
