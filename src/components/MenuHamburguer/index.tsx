@@ -3,14 +3,14 @@ import { Hamburguer, NavbarMobile } from '../../components';
 
 const MenuHamburguer = () => {
   const [isActive, setIsActive] = useState(false);
+  const clickHandle = () => setIsActive(!isActive);
 
   return (
     <>
-      <button onClick={() => setIsActive(!isActive)}>
+      <button onClick={clickHandle}>
         <Hamburguer isOpen={isActive} />
       </button>
-
-      {isActive && <NavbarMobile />}
+      <NavbarMobile isActive={isActive} clickHandle={clickHandle} />
     </>
   );
 };
