@@ -26,7 +26,7 @@ function Card({ type, color, title, message, setClassName }: Card) {
     default:
       return (
         <div
-          className={`h-40 md:h-52 w-full md:w-72 flex flex-col px-4 rounded-3xl border-2 border-${color} ${setClassName} hover:bg-${color} hover:bg-opacity-10`}
+          className={`bg-white.900 dark:bg-gray.900 h-40 md:h-52 w-full md:w-72 flex flex-col px-4 rounded-3xl border-2 border-${color} ${setClassName} hover:bg-${color} hover:bg-opacity-10`}
         >
           <h3
             className={`font-grotesk font-bold text-xl leading-5 mt-4 text-${color}`}
