@@ -4,11 +4,15 @@ import Logo from '../../../public/images/logoFull.svg';
 const NavbarMobile = ({ isActive, clickHandle }) => (
   <>
     <div
-      className={`${isActive ? 'block' : 'hidden'} fixed top-0 left-0 w-screen h-screen bg-gray-white dark:bg-gray.900 opacity-60 dark:opacity-60`}
+      className={`${
+        isActive ? 'block' : 'hidden'
+      } fixed top-0 left-0 w-screen h-screen bg-gray-white dark:bg-gray.900 opacity-60 dark:opacity-60`}
       onClick={clickHandle}
     />
     <aside
-      className={`flex flex-col fixed top-0 left-0 z-50 w-10/12 max-w-sm h-screen bg-gray-white dark:bg-gray.900 p-8 transition-transform duration-500 transform ${isActive ? 'translate-x-0' : '-translate-x-full'}`}
+      className={`flex flex-col fixed top-0 left-0 z-50 w-10/12 max-w-sm h-screen bg-gray-white dark:bg-gray.900 p-8 transition-transform duration-500 transform ${
+        isActive ? 'translate-x-0' : '-translate-x-full'
+      }`}
       onClick={clickHandle}
     >
       <Logo className="fill-current dark:text-white" />
@@ -16,14 +20,8 @@ const NavbarMobile = ({ isActive, clickHandle }) => (
         Crie ou entre em sua conta Programeiros
       </p>
       <div className="flex flex-col gap-4 mt-8">
-        <UserButton
-          type='btn-blue'
-          text='Criar conta'
-        />
-        <UserButton
-          type='btn-outline-gray'
-          text='Entrar na conta'
-        />
+        <UserButton type="btn-blue" text="Criar conta" />
+        <UserButton type="btn-outline-gray" text="Entrar na conta" />
       </div>
       <ul className="flex flex-col gap-4 text-dark dark:text-white mt-16">
         <li>
@@ -32,7 +30,7 @@ const NavbarMobile = ({ isActive, clickHandle }) => (
             color="orange"
             hoverColor="orange"
             clickedColor="orange-dark"
-            url='/'
+            url="/"
           />
         </li>
         <li>
@@ -41,7 +39,7 @@ const NavbarMobile = ({ isActive, clickHandle }) => (
             color="green"
             hoverColor="green"
             clickedColor="green-dark"
-            url='/'
+            url="/"
           />
         </li>
         <li>
@@ -50,7 +48,7 @@ const NavbarMobile = ({ isActive, clickHandle }) => (
             color="btn-gray"
             hoverColor="btn-gray"
             clickedColor="btn-gray-click"
-            url='/'
+            url="/"
           />
         </li>
       </ul>
