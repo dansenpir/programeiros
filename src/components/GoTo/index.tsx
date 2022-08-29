@@ -10,13 +10,13 @@ interface GoTo {
   url: string;
 }
 
-const GoTo = ({ text, color, hoverColor, clickedColor }: GoTo) => {
+const GoTo = ({ text, color, hoverColor, clickedColor, url }: GoTo) => {
   const [isHover, setIsHover] = useState(false);
   const hoverHandle = () => setIsHover(!isHover);
   return (
-    <Link href="/" passHref>
+    <Link href={url} passHref>
       <a
-        className={`flex items-center h-12 px-3 border border-${color} rounded-xl ${isHover && `hover:border-${hoverColor} hover:bg-${hoverColor} dark:hover:bg-${hoverColor} active:border-${clickedColor} active:bg-${clickedColor} dark:active:bg-${clickedColor}`}`}
+        className={`inline-flex items-center h-12 px-3 border border-${color} rounded-xl ${isHover && `hover:border-${hoverColor} hover:bg-${hoverColor} dark:hover:bg-${hoverColor} active:border-${clickedColor} active:bg-${clickedColor} dark:active:bg-${clickedColor}`}`}
         onMouseEnter={hoverHandle}
         onMouseLeave={hoverHandle}
       >
