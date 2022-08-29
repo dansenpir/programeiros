@@ -4,7 +4,7 @@ import Github from '../../../public/images/github_icon.svg';
 import Telegram from '../../../public/images/telegram_icon.svg';
 
 interface SocialButton {
-  type: "telegram" | "discord" | "github";
+  type: 'telegram' | 'discord' | 'github';
   hasText?: boolean;
 }
 
@@ -16,32 +16,41 @@ function SocialButton({ type, hasText }: SocialButton) {
       url: 'https://t.me/+p8PHV0M348k3NjE5',
       color: 'btn-telegram',
       hoverColor: 'btn-telegram',
-      clickedColor: 'telegram'
+      clickedColor: 'telegram',
     },
     discord: {
       url: 'https://discord.gg/pDxbmrzNaJ',
       color: 'btn-discord',
       hoverColor: 'btn-discord',
-      clickedColor: 'discord'
+      clickedColor: 'discord',
     },
     github: {
       url: 'https://github.com/programeiros',
       color: 'btn-github',
       hoverColor: 'btn-github',
-      clickedColor: 'github'
-    }
+      clickedColor: 'github',
+    },
   };
 
-  const svgStyles = `fill-current ${isHover ? 'text-white' : `text-${socialMedias[type].color}`}`;
+  const svgStyles = `fill-current ${
+    isHover ? 'text-white' : `text-${socialMedias[type].color}`
+  }`;
 
   const hoverHandle = () => setIsHover(!isHover);
 
   return (
     <a
-      className={`flex items-center justify-center border border-${socialMedias[type].color} rounded-xl font-grotesk h-12 ${hasText ? 'w-32' : 'w-12'} hover:bg-${socialMedias[type].hoverColor} dark:hover:bg-${socialMedias[type].hoverColor} ${isHover && `hover:border-${socialMedias[type].hoverColor} dark:hover:border-${socialMedias[type].hoverColor} active:border-${socialMedias[type].clickedColor} active:bg-${socialMedias[type].clickedColor} dark:active:bg-${socialMedias[type].clickedColor}`}`}
+      className={`flex items-center justify-center border border-${
+        socialMedias[type].color
+      } rounded-xl font-grotesk h-12 ${hasText ? 'w-32' : 'w-12'} hover:bg-${
+        socialMedias[type].hoverColor
+      } dark:hover:bg-${socialMedias[type].hoverColor} ${
+        isHover &&
+        `hover:border-${socialMedias[type].hoverColor} dark:hover:border-${socialMedias[type].hoverColor} active:border-${socialMedias[type].clickedColor} active:bg-${socialMedias[type].clickedColor} dark:active:bg-${socialMedias[type].clickedColor}`
+      }`}
       href={socialMedias[type].url}
-      target='_blank'
-      rel='noreferrer'
+      target="_blank"
+      rel="noreferrer"
       onMouseEnter={hoverHandle}
       onMouseLeave={hoverHandle}
     >
@@ -49,7 +58,11 @@ function SocialButton({ type, hasText }: SocialButton) {
       {type === 'discord' && <Discord className={svgStyles} />}
       {type === 'github' && <Github className={svgStyles} />}
       {hasText && (
-        <span className={`ml-3 capitalize ${isHover ? `text-white` : `text-${socialMedias[type].color}`}`}>
+        <span
+          className={`ml-3 capitalize ${
+            isHover ? `text-white` : `text-${socialMedias[type].color}`
+          }`}
+        >
           {type}
         </span>
       )}
