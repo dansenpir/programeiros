@@ -19,10 +19,10 @@ export default function Home() {
           <p className="font-overpass font-normal text-gray text-base leading-5 pt-4 md:pt-12">
             Conheça também nossas comunidades:
           </p>
-          <div className="flex flex-wrap sm:flex-nowrap mt-8">
-            <SocialButton text={'Telegram'} />
-            <SocialButton text={'Discord'} />
-            <SocialButton text={'GitHub'} />
+          <div className="flex flex-wrap sm:flex-nowrap gap-y-14 sm:gap-y-0 gap-x-4 sm:gap-x-8 mt-8">
+            <SocialButton type='telegram' hasText={true} />
+            <SocialButton type='discord' hasText={true} />
+            <SocialButton type='github' hasText={true} />
           </div>
         </div>
         <div className="hidden lg:block lg:mt-24 xl:mt-40 lg:ml-32">
@@ -121,9 +121,9 @@ export default function Home() {
           <GoTo
             text="Vá para o guia"
             color="orange"
-            arrowColor="#C8A704"
             hoverColor="orange"
             clickedColor="orange-dark"
+            url='/'
           />
         </div>
       </section>
@@ -156,9 +156,9 @@ export default function Home() {
           <GoTo
             text="Vá para as vagas"
             color="green"
-            arrowColor="#04C8A7"
             hoverColor="green"
             clickedColor="green-dark"
+            url='/'
           />
         </div>
       </section>
@@ -184,10 +184,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-16 lg:mt-0 flex flex-wrap sm:flex-nowrap">
-          <SocialButton text={'Telegram'} />
-          <SocialButton text={'Discord'} />
-          <SocialButton text={'GitHub'} />
+        <div className="mt-16 lg:mt-0 flex flex-wrap sm:flex-nowrap gap-y-14 gap-y-0 gap-x-4 sm:gap-x-8">
+          <SocialButton type='telegram' hasText={true} />
+          <SocialButton type='discord' hasText={true} />
+          <SocialButton type='github' hasText={true} />
         </div>
       </section>
     </main>
