@@ -7,8 +7,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'btn-blue': '#0466C8',
+        'btn-blue-hover': '#0357AB',
+        'btn-blue-click': '#03498F',
         'btn-discord': '#5865F2',
         'btn-github': '#0969DA',
+        'btn-gray': '#6F7683',
+        'btn-gray-click': '#5F646F',
         'btn-telegram': '#0F86D7',
         blue: '#54A8FC',
         dark: '#121315',
