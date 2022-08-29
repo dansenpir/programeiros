@@ -22,7 +22,9 @@ const Header = () => {
           <div className="flex items-center justify-center">
             <div className="cursor-pointer mr-16">
               <Link href="/" passHref>
-                <Logo fill={`${logoColor}`} />
+                <a>
+                  <Logo fill={`${logoColor}`} />
+                </a>
               </Link>
             </div>
             <Navbar />
