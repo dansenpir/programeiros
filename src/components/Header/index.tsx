@@ -16,7 +16,7 @@ const Header = () => {
   }, [theme]);
 
   return (
-    <header className="mx-8 md:mx-16 mt-8">
+    <header className="mx-8 md:mx-16 pt-8">
       <div className="flex justify-between">
         <div className="flex justify-between w-full">
           <div className="flex items-center justify-center">
