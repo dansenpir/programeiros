@@ -55,9 +55,9 @@ const NavbarMobile = ({ isActive, clickHandle }) => (
         </li>
       </ul>
       <div className="flex justify-start gap-x-11 mt-auto mb-4">
-        <SocialButton type="telegram" hasText={false} />
-        <SocialButton type="discord" hasText={false} />
-        <SocialButton type="github" hasText={false} />
+        <SocialButton type="telegram" />
+        <SocialButton type="discord" />
+        <SocialButton type="github" />
       </div>
     </aside>
   </>
