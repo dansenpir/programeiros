@@ -1,47 +1,40 @@
+import Link from 'next/link';
 import { useState } from 'react';
 import ArrowRight from '../../../public/images/arrow_right.svg';
 
 interface GoTo {
   text: string;
   color: string;
-  arrowColor: string;
   hoverColor: string;
   clickedColor: string;
+  url: string;
 }
 
-const GoTo = ({ text, color, arrowColor, hoverColor, clickedColor }: GoTo) => {
+const GoTo = ({ text, color, hoverColor, clickedColor, url }: GoTo) => {
   const [isHover, setIsHover] = useState(false);
-  const [isClicked, setIsClicked] = useState(false);
-  const hoverHandle = () => setIsHover(true);
-  const clickHandle = () => setIsClicked(!isClicked);
-  const leaveHandle = () => {
-    setIsClicked(false);
-    setIsHover(false);
-  };
+  const hoverHandle = () => setIsHover(!isHover);
   return (
-    <button
-      onMouseOver={() => hoverHandle()}
-      onMouseLeave={() => leaveHandle()}
-      onMouseDown={() => clickHandle()}
-      onMouseUp={() => clickHandle()}
-      className={`h-12 w-48 border-1 border-${color} p-3 rounded-xl flex items-center justify-center ${
-        isHover && `bg-${hoverColor} dark:hover:bg-${hoverColor}`
-      }
-          ${isClicked && `bg-${clickedColor} dark:focus:bg-${clickedColor}`}`}
-    >
-      <p
-        className={`mr-3 font-grotesk font-normal text-base ${
-          isHover ? 'text-white dark:text-white' : `text-${color}`
+    <Link href={url} passHref>
+      <a
+        className={`inline-flex items-center h-12 px-3 border border-${color} rounded-xl ${
+          isHover &&
+          `hover:border-${hoverColor} hover:bg-${hoverColor} dark:hover:bg-${hoverColor} active:border-${clickedColor} active:bg-${clickedColor} dark:active:bg-${clickedColor}`
         }`}
+        onMouseEnter={hoverHandle}
+        onMouseLeave={hoverHandle}
       >
-        {text}
-      </p>
-      {isHover || isClicked ? (
-        <ArrowRight fill="white" />
-      ) : (
-        <ArrowRight fill={`${arrowColor}`} />
-      )}
-    </button>
+        <p
+          className={`font-grotesk ${isHover ? 'text-white' : `text-${color}`}`}
+        >
+          {text}
+        </p>
+        <ArrowRight
+          className={`ml-3 fill-current ${
+            isHover ? 'text-white' : `text-${color}`
+          }`}
+        />
+      </a>
+    </Link>
   );
 };
 
