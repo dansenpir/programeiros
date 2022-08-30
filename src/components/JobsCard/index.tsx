@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 type JobsLabel = {
@@ -44,8 +45,10 @@ function JobsCard({
   return (
     <div className="space-y-6 flex-col w-72 bg-rounded rounded-3xl p-6 dark:bg-gray.900 bg-white.900">
       <div className="flex pb-6 justify-between items-center">
-        <img
+        <Image
           src={jobCompanyLogo}
+          width={96}
+          height={96}
           alt="Company Logo"
           className="rounded-full w-24 h-24"
         />
