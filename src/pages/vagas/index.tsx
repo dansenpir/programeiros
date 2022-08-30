@@ -27,9 +27,9 @@ export default function Vagas() {
         <GoTo
           text="Vamos descobrir"
           color="green"
-          arrowColor="#04C8A7"
           hoverColor="green"
           clickedColor="green-dark"
+          url='/'
         />
       </div>
       <div className="px-16 mt-12 flex flex-wrap gap-11 mx-auto">
