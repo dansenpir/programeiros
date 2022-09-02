@@ -1,4 +1,4 @@
-import { Footer, Header, JobsCard } from '../../components';
+import { Footer, Header, JobsCard, JobsSearchForm } from '../../components';
 import Image from 'next/image';
 import { GoTo } from '../../components';
 import Head from 'next/head';
@@ -36,6 +36,9 @@ export default function Vagas() {
           clickedColor="green-dark"
           url='/'
         />
+      </div>
+      <div className="mt-64 mx-8">
+        <JobsSearchForm />
       </div>
       <div className="px-16 mt-12 flex flex-wrap gap-11 mx-auto">
         <JobsCard
