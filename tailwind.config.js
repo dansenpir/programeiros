@@ -21,6 +21,7 @@ module.exports = {
         'registerButton': '#0466C8',
 
         'gray-white': '#DBDDE0',
+        'gray.500': '#6F7683',
         'gray-dark': '#41454C',
         'gray.900': '#222428',
         gray: '#A5A9B2',
@@ -31,11 +32,19 @@ module.exports = {
         github: '#085CBD',
         telegram: '#0D73B8',
 
+        'blue.100': '#CAEDFC',
+        'blue.300': '#62B6EE',
+        'blue.500': '#0466C8',
+        'blue.700': '#023A90',
+        'blue.900': '#001D60',
         blue: '#54A8FC',
+
         dark: '#121315',
 
         green: '#04C8A7',
         'green-dark': '#03AB8F',
+        'green.700': '#028D90',
+        'green.900': '#004C60',
 
         orange: '#C8A704',
         'orange-dark': '#AB8F03',
@@ -58,6 +67,13 @@ module.exports = {
       margin: {
         150: '37.5rem',
       },
+      gridTemplateColumns: {
+        'searchForm': 'repeat(4, 1fr) min-content'
+      },
+      spacing: {
+        '17.28': '1.08rem',
+        '60': '3.75rem'
+      }
     },
     fontFamily: {
       grotesk: ['Space Grotesk', 'sans-serif'],
@@ -67,7 +83,8 @@ module.exports = {
   variants: {
     extend: {
       backgroundColor: ['active'],
-      borderColor: ['active']
+      borderColor: ['active'],
+      borderRadius: ['last'],
     },
   },
   plugins: [],
