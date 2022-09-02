@@ -11,3 +11,5 @@ export * from './GoTo';
 export * from './GoToCard';
 export * from './JobsCard';
 export * from './UserButton';
+export * from './JobsSearchInput';
+export * from './JobsSearchForm';
