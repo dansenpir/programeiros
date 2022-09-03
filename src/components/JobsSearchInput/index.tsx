@@ -1,14 +1,14 @@
 import { ChangeEvent, MouseEventHandler, useEffect, useRef, useState } from "react";
 import DropdownArrow from "../../../public/images/dropdownArrow.svg";
 
-interface JobsSearchInput {
+interface IJobsSearchInput {
   type: 'select' | 'text';
   label: string;
   options?: string[];
   placeholder?: string;
 }
 
-const JobsSearchInput = ({ type, label, options, placeholder }: JobsSearchInput) => {
+const JobsSearchInput = ({ type, label, options, placeholder }: IJobsSearchInput) => {
   const select = useRef(null);
   const [selectedData, setSelectedData] = useState('Escolha');
   const [isOpenDropdown, setIsOpenDropdown] = useState(false);
