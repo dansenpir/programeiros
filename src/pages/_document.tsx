@@ -1,11 +1,17 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+} from 'next/document';
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html>
         <Head>
-          <meta name="theme-color" content="#010F1D" />
+          <meta name="theme-color" content="#222428" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
