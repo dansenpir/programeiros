@@ -1,6 +1,5 @@
-import { Footer, Header, JobsCard, JobsSearchForm } from '../../components';
+import { Footer, GoTo, GoToCard, Header, JobsCard, JobsSearchForm } from '../../components';
 import Image from 'next/image';
-import { GoTo } from '../../components';
 import Head from 'next/head';
 
 export default function Vagas() {
@@ -28,7 +27,7 @@ export default function Vagas() {
           />
         </div>
       </section>
-      <div className="mt-12 lg:-mt-4 xl:-mt-20 order-3 lg:order-none pr-10 lg:pr-0">
+      <div className="mt-12 lg:-mt-4 xl:-mt-20 mx-8 md:mx-16 order-3 lg:order-none pr-10 lg:pr-0">
         <GoTo
           text="Vamos descobrir"
           color="green"
@@ -37,10 +36,15 @@ export default function Vagas() {
           url='/'
         />
       </div>
-      <div className="mt-64 mx-8">
+      <div className="mt-64 mx-8 md:mx-16">
         <JobsSearchForm />
       </div>
-      <div className="px-16 mt-12 flex flex-wrap gap-11 mx-auto">
+      <div className='mt-16 mx-8 md:mx-16'>
+        <GoToCard
+          text='Quer se destacar nas vagas? Estude com a ajuda de guias para as áreas que a vaga desejada pede. Clique neste card.'
+        />
+      </div>
+      <div className="px-16 mt-16 flex flex-wrap gap-11 mx-auto">
         <JobsCard
           jobTitle="Frontend Developer (Pleno)"
           jobCompanyLogo="/jobs/microsoftLogo.png"
