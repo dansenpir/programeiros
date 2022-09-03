@@ -41,8 +41,7 @@ const JobsSearchInput = ({ type, label, options, placeholder }: JobsSearchInput)
 
   const changeHandle = (event: ChangeEvent<HTMLInputElement>) => {
     setInputData(event.target.value);
-    if (event.target.value === '') setIsUserAction(false);
-    if (event.target.value !== '') setIsUserAction(true);
+    setIsUserAction(event.target.value === '' ? false : true);
   };
 
   return (
