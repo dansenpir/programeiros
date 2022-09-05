@@ -11,3 +11,4 @@ export * from './UserButton';
 export * from './JobsSearchInput';
 export * from './JobsSearchForm';
 export * from './Card';
+export * from './Divider';
