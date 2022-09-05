@@ -1,4 +1,4 @@
-import { JobsSearchInput } from '../JobsSearchInput';
+import { JobsSearchInput, Divider } from "../index";
 import MagnifyingGlass from '../../../../public/images/magnifyingGlass.svg';
 
 const JobsSearchForm = () => {
@@ -69,7 +69,9 @@ const JobsSearchForm = () => {
           </button>
         </div>
       </div>
-      <div className="w-full h-px mt-8 bg-gradient-to-r from-green to-blue.500" />
+      <div className='mt-8 -mx-8 md:-mx-16'>
+        <Divider size='sm' style='gradient' />
+      </div>
       <span className="block mt-8 font-grotesk font-light text-xs text-gray.500 dark:text-white">
         Foi encontrado <span className="font-bold">4</span>
         &nbsp;vagas para a sua busca
