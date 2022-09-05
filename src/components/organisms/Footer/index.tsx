@@ -1,7 +1,9 @@
+import { Divider } from '../../atoms';
 import Logo from '../../../../public/images/logo.svg';
 
 const Footer = () => (
   <footer className="bg-gray.900 mt-64">
+    <Divider size="lg" style="gradient" />
     <div className="py-12 md:py-0 md:pb-12 md:pt-14">
       <div className="w-8/12 md:w-full px-10 xl:px-24">
         <Logo fill="#fff" />
