@@ -71,7 +71,6 @@ module.exports = {
         'searchForm': 'repeat(4, 1fr) min-content'
       },
       spacing: {
-        '1.3px': '0.08125rem',
         '17.28': '1.08rem',
         '60': '3.75rem'
       }
