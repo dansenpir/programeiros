@@ -4,7 +4,7 @@ interface IDivider {
 }
 
 const Divider = ({ size, style }: IDivider) => {
-  const height = size === 'sm' ? 'h-1.3px' : size === 'lg' && 'h-1.5';
+  const height = size === 'sm' ? 'h-px' : size === 'lg' && 'h-1.5';
   const bgColor =
     style === 'gradient'
       ? 'bg-gradient-to-r from-green to-blue.500'
