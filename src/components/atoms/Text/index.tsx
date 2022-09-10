@@ -21,12 +21,12 @@ const Text: React.FC<IText> = ({
   children,
   typography,
   fontType,
-  customStyles,
+  className,
 }: IText) => {
   const styles = addClassNamesToTailwind(
     sizeMaps[typography],
     fontFamilyMaps[fontType],
-    customStyles,
+    className,
   );
 
   switch (typography) {
