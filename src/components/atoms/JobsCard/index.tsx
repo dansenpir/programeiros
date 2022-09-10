@@ -63,7 +63,7 @@ function JobsCard({
       <Text
         typography="p"
         fontType="overpass"
-        customStyles="text-gray leading-5 max-w-60 overflow-hidden text-ellipsis"
+        className="text-gray leading-5 max-w-60 overflow-hidden text-ellipsis"
       >
         {jobDescription}
       </Text>

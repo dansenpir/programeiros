@@ -29,5 +29,5 @@ export interface IText {
   children: string;
   typography: TypographyType;
   fontType: TypographyFontType;
-  customStyles?: string;
+  className?: string;
 }
