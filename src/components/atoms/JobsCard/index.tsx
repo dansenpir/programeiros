@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Text from '../Text';
 
 type JobsLabelProps = {
   name: string;
@@ -59,9 +60,13 @@ function JobsCard({
         <JobTypeLabel name={jobType} />
         <JobExpLabel name={jobExp} />
       </div>
-      <p className="text-gray leading-5 w-60 overflow-hidden text-ellipsis">
+      <Text
+        typography="p"
+        fontType="overpass"
+        customStyles="text-gray leading-5 max-w-60 overflow-hidden text-ellipsis"
+      >
         {jobDescription}
-      </p>
+      </Text>
       <div className="flex space-x-5">
         <Link href={jobRedirectLink} passHref>
           <a>
