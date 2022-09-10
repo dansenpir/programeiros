@@ -1,5 +1,4 @@
 interface TypographyProps {
-  fontFamily?: string;
   fontSize: number;
 }
 
