@@ -32,3 +32,13 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
